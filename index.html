@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="container">
+    <header>
+      <h1>Phrase Cleaner</h1>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div>
+          <h2>Limpe palavrões de suas frases ;)</h2>
+        </div>
+        <div class="containerText">
+          <h3 id="h3">Digite a sua frase</h3>
+          <textarea 
+            class="textarea" 
+            id="textarea" 
+            cols="30" 
+            rows="10" 
+            maxlength="255"
+            oninput="onChangeTextArea()"
+          ></textarea>
+          <div>
+            <span id="erros"></span>
+            <span><strong id="characters">0</strong>/255 caracteres</span>
+          </div>
+        </div>
+        <button 
+          id="button"
+          onclick="onClickButton()">
+          <span id="textButton">Limpar frase</span>
+        </button>
+        <div class="copy">
+          <span>Copytight © 2021 - Todos os direitos reservados</span>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

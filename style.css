@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Verdana;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+h1 {
+  margin-left: 50px;
+  color: rgb(12, 116, 219);
+}
+
+main {
+  height: calc(100vh - 100px);
+}
+
+.wrapper {
+  margin: 100px auto;
+  width: 500px;
+}
+
+h2 {
+  margin: 0;
+  color: rgb(65, 84, 132);
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 50px 0;
+}
+
+
+h3 {
+  margin: 0;
+  color: rgb(65, 84, 132);
+}
+
+h3.active {
+  color: rgb(0, 212, 143);
+}
+
+.containerText > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textarea {
+  margin-top: 10px;
+  resize: none;
+  border: 1px solid rgba(216, 227, 250, 1);
+  border-radius: 5px;
+}
+
+.destaque { 
+  color: rgb(0, 212, 143); 
+  font-weight: 600;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(18, 124, 231);
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+button:hover {
+  filter: brightness(0.6);
+}
+
+button > span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+button.active {
+  background-color: rgb(0, 212, 143);
+}
+
+.copy {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(65, 84, 132);
+}
+
